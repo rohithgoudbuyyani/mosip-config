@@ -4,19 +4,17 @@
       "id": "phone",
       "controlType": "phone",
       "labelName": {
-        "en": "Phone",
-        "km": "ទូរស័ព្ទ"
+        "en": "Username",
+        "km": "ឈ្មោះ​អ្នកប្រើប្រាស់"
       },
       "placeholder": {
-        "eng": "Enter your username",
-        "khm": "សូមបញ្ចូលឈ្មោះអ្នកប្រើប្រាស់"
+        "en": "Enter your username",
+        "km": "សូមបញ្ចូលឈ្មោះអ្នកប្រើប្រាស់"
       },
       "validators": [],
       "required": false,
       "disabled": true,
-      "prefix": [
-        "+91"
-      ],
+      "prefix": ["+91"],
       "alignmentGroup": "groupA"
     },
     {
@@ -25,8 +23,8 @@
       "controlType": "textbox",
       "type": "simpleType",
       "labelName": {
-        "eng": "Full Name in Khmer",
-        "khm": "គោត្តនាម-នាម"
+        "en": "Full Name in Khmer",
+        "km": "គោត្តនាម-នាម"
       },
       "placeholder": {
         "en": "Enter Full Name in Khmer",
@@ -36,22 +34,22 @@
         {
           "regex": "^[\\u1780-\\u17FF\\u19E0-\\u19FF\\u1A00-\\u1A9F\\u0020]{1,30}$",
           "error": {
-            "eng": "Full Name has to be in Khmer only",
-            "khm": "គោត្តនាម-នាមត្រូវតែមានតែអក្សរខ្មែរ"
+            "en": "Full Name has to be in Khmer only",
+            "km": "គោត្តនាម-នាមត្រូវតែមានតែអក្សរខ្មែរ"
           },
           "langCode": "km"
         },
         {
           "regex": "^[a-zA-Z][a-zA-Z ]{1,30}$",
           "error": {
-            "eng": "Full Name has to be in English only",
-            "khm": "ឈ្មោះ​ពេញ​ត្រូវតែសរសេរជាភាសាអង់គ្លេសតែប៉ុណ្ណោះ"
+            "en": "Full Name has to be in English only",
+            "km": "ឈ្មោះ​ពេញ​ត្រូវតែសរសេរជាភាសាអង់គ្លេសតែប៉ុណ្ណោះ"
           },
           "langCode": "en"
         }
       ],
       "info": {
-        "en": "Maximum 30 characters allowed with no alphabets or special characters, except space.",
+        "en": "Maximum 30 characters allowed with no numbers or special characters except space.",
         "km": "ជាអតិបរមា 30 តួអក្សរត្រូវបានអនុញ្ញាត និងមិនគួរមានលេខ ឬតួអក្សរពិសេសណាមួយឡើយ លើកលែងតែដកឃ្លា។"
       },
       "alignmentGroup": "groupB",
@@ -62,44 +60,44 @@
       "capsLockCheck": true,
       "controlType": "password",
       "labelName": {
-        "eng": "Password",
-        "khm": "ពាក្យសម្ងាត់"
+        "en": "Password",
+        "km": "ពាក្យសម្ងាត់"
       },
       "placeholder": {
-        "eng": "Enter your password",
-        "khm": "សូមបញ្ចូលពាក្យសម្ងាត់"
+        "en": "Enter your password",
+        "km": "សូមបញ្ចូលពាក្យសម្ងាត់"
       },
       "validators": [
         {
           "regex": "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[\\x5F\\W])(?=.{8,20})[a-zA-Z0-9\\x5F\\W]{8,20}$",
           "error": {
-            "eng": "Password does not meet the password policy. Click on \"i\" icon to know the password policy"
+            "en": "Password does not meet the password policy. Click on the info icon to know the password policy."
           }
         }
       ],
       "info": {
-        "eng": "Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character.",
-        "khm": "ពាក្យសម្ងាត់ត្រូវតែមានយ៉ាងហោចណាស់ ៨ តួអក្សរ មានតួអក្សរធំមួយ តួអក្សរតូចមួយ លេខមួយ និងតួអក្សរពិសេសមួយ។"
+        "en": "Password must be 8–20 characters long and include uppercase, lowercase, number, and special character.",
+        "km": "ពាក្យសម្ងាត់ត្រូវតែមាន ៨–២០ តួអក្សរ មានតួអក្សរធំ តួអក្សរតូច លេខ និងតួអក្សរពិសេស។"
       },
       "alignmentGroup": "groupC",
       "required": true
     },
     {
-      "id": "encodedPhoto",
+      "id": "photoCapture",
       "controlType": "photo",
       "labelName": {
-        "eng": "Capture Photo",
-        "khm": "ថតរូប"
+        "en": "Capture Photo",
+        "km": "ថតរូប"
       },
       "placeholder": {
-        "eng": "Click to capture photo",
-        "khm": "ចុចដើម្បីថតរូប"
+        "en": "Click to capture photo",
+        "km": "ចុចដើម្បីថតរូប"
       },
       "info": {
-        "eng": "Please click here to capture your photo using your device's camera.",
-        "khm": "សូមចុចទីនេះដើម្បីថតរូបរបស់អ្នកដោយប្រើកាមេរ៉ារបស់ឧបករណ៍របស់អ្នក។"
+        "en": "Please capture your photo using your device camera.",
+        "km": "សូមថតរូបរបស់អ្នកដោយប្រើកាមេរ៉ារបស់ឧបករណ៍។"
       },
-      "acceptedFileTypes": "image/jpeg , image/jpg , image/png , image/webp",
+      "acceptedFileTypes": "image/jpeg,image/jpg,image/png,image/webp",
       "required": true,
       "alignmentGroup": "groupF"
     },
@@ -107,12 +105,12 @@
       "id": "preferredLang",
       "controlType": "textbox",
       "labelName": {
-        "eng": "Preferred Lang",
-        "khm": "ភាសាដែលចូលចិត្ត"
+        "en": "Preferred Language",
+        "km": "ភាសាដែលចូលចិត្ត"
       },
       "info": {
-        "eng": "Preferred Lang",
-        "khm": "ភាសាដែលចូលចិត្ត"
+        "en": "Preferred Language",
+        "km": "ភាសាដែលចូលចិត្ត"
       },
       "required": false,
       "disabled": true
@@ -121,96 +119,58 @@
       "id": "consent",
       "controlType": "checkbox",
       "labelName": {
-        "eng": "I agree to <b><a target='_blank' href='https://www.example.com/'>Terms & Conditions</a></b> and <b><a target='_blank' href='https://www.example.com/'>Privacy Policy</a></b>, to store & process my information as required.",
-        "khm": "ខ្ញុំយល់ព្រមតាម<b><a target='_blank' href='https://www.example.com/'>លក្ខខណ្ឌ</a></b> និង<b><a target='_blank' href='https://www.example.com/'>គោលការណ៍ឯកជនភាព</a></b>របស់ប្រទេសកម្ពុជា ដើម្បីរក្សាទុក និងដំណើរការព័ត៌មានរបស់ខ្ញុំតាមតម្រូវការ។"
+        "en": "I agree to <b><a target='_blank' href='https://www.example.com/'>Terms & Conditions</a></b> and <b><a target='_blank' href='https://www.example.com/'>Privacy Policy</a></b>.",
+        "km": "ខ្ញុំយល់ព្រមតាម<b><a target='_blank' href='https://www.example.com/'>លក្ខខណ្ឌ</a></b> និង<b><a target='_blank' href='https://www.example.com/'>គោលការណ៍ឯកជនភាព</a></b>។"
       },
       "required": true,
       "alignmentGroup": "groupD"
     }
   ],
   "allowedValues": {
-    "preferredLang": "khm",
-    "gender": {
-      "male": {
-        "eng": "Male",
-        "khm": "បុរស"
-      },
-      "female": {
-        "eng": "Female",
-        "khm": "ស្ត្រី"
-      }
-    }
+    "preferredLang": ["km"]
   },
   "i18nValues": {
     "errors": {
       "required": {
         "en": "This field is required",
-        "ara": "هذه الخانة مطلوبه",
         "km": "វាលនេះត្រូវការទទួលបាន"
       },
       "passwordMismatch": {
-        "en": "Passwords is not matching please check your password",
-        "km": "ពាក្យសម្ងាត់មិនត្រូវគ្នាទេ សូមពិនិត្យពាក្យសម្ងាត់របស់អ្នក"
+        "en": "Passwords do not match",
+        "km": "ពាក្យសម្ងាត់មិនត្រូវគ្នាទេ"
       },
       "capsLock": {
         "en": "Caps Lock is on",
         "km": "Caps Lock កំពុងបើក"
       },
       "fileNotSupported": {
-        "en": "File type not supported. Please upload a valid file.",
-        "km": "ប្រភេទឯកសារមិនត្រូវបានគាំទ្រ។ សូមបញ្ចូលឯកសារដែលត្រឹមត្រូវ។"
+        "en": "File type not supported",
+        "km": "ប្រភេទឯកសារមិនត្រូវបានគាំទ្រ"
       },
       "fileSizeExceeded": {
-        "en": "File size exceeds the maximum limit of 5 MB.",
-        "km": "ទំហំឯកសារលើសកំណត់អតិបរមា ៥ មេហ្គាបៃត៍។"
+        "en": "File size exceeds 5 MB",
+        "km": "ទំហំឯកសារលើស ៥ មេហ្គាបៃត៍"
       }
     },
     "labels": {
       "password_confirm": {
         "en": "Confirm Password",
         "km": "បញ្ជាក់លេខសម្ងាត់"
-      },
-      "capturePhoto": {
-        "en": "Capture Photo",
-        "km": "ថតរូប"
-      },
-      "clickToUpload": {
-        "en": "Click to upload",
-        "km": "ចុចដើម្បីបញ្ចូលឬថតរូប"
       }
     },
     "placeholders": {
       "password_confirm": {
-        "eng": "Enter your password again",
-        "khm": "បញ្ចូលលេខសម្ងាត់របស់អ្នកម្ដងទៀត"
+        "en": "Enter your password again",
+        "km": "បញ្ចូលលេខសម្ងាត់ម្ដងទៀត"
       }
     }
   },
-  "errors": {
-    "required": {
-      "en": "This field is required",
-      "ara": "هذه الخانة مطلوبه",
-      "km": "វាលនេះត្រូវការទទួលបាន"
-    },
-    "passwordMismatch": {
-      "en": "Passwords is not matching please check your password",
-      "km": "ពាក្យសម្ងាត់មិនត្រូវគ្នាទេ សូមពិនិត្យពាក្យសម្ងាត់របស់អ្នក"
-    },
-    "capsLock": {
-      "en": "Caps Lock is on",
-      "km": "Caps Lock កំពុងបើក"
-    }
-  },
   "language": {
-    "mandatory": [
-      "khm"
-    ],
-    "optional": [
-      "eng"
-    ],
+    "mandatory": ["km"],
+    "optional": ["en"],
     "langCodeMap": {
-      "khm": "km",
-      "eng": "en"
+      "km": "km",
+      "en": "en"
     }
   },
   "maxUploadFileSize": 5242880
